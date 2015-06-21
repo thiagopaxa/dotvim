@@ -32,6 +32,21 @@ filetype plugin indent on
 :set textwidth=80
 :set colorcolumn=+1
 
+" Persistent Undo = 'undo forever'
+if has('persistent_undo')
+  set undodir=~/.vim/vimundo
+  set undofile
+  set undolevels=1000
+  set undoreload=10000
+endif
+
+set encoding=utf-8
+set et              " Troca tabs por espaços
+set nu              " Mostra o número de linhas
+set ai              " Faz o auto tab/auto indent
+set cursorline      " Destaca a linha atual
+
+
 " PLUGINS SETUP
 
   " Runs CtrlP Buffer
@@ -39,3 +54,11 @@ filetype plugin indent on
 
   " Call Emmet with ctrl+,,
   let g:user_emmet_leader_key=','
+
+  " Nertree shortcuts
+  map <Leader>S <ESC>:NERDTreeToggle<CR>
+  map <Leader>s <ESC>:NERDTreeFind<CR>
+  let NERDTreeShowHidden=1
+
+  " Matchmaker
+  let g:matchmaker_enable_startup = 1
