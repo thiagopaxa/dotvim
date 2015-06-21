@@ -13,3 +13,6 @@
 [submodule "bundle/multiple-cursors"]
 	path = bundle/multiple-cursors
 	url = http://github.com/terryma/vim-multiple-cursors
+[submodule "css3-syntax"]
+	path = css3-syntax
+	url = https://github.com/hail2u/vim-css3-syntax
