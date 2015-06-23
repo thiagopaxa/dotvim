@@ -11,6 +11,7 @@ syntax on
 set background=dark
 set t_Co=256
 let base16colorspace=256
+colorscheme Tomorrow-Night-Eighties
 
 " Highlight Whitespaces
 highlight ExtraWhitespace ctermbg=red guibg=red
