@@ -11,7 +11,10 @@ syntax on
 set background=dark
 set t_Co=256
 let base16colorspace=256
-colorscheme Tomorrow-Night-Eighties
+colorscheme Tomorrow-Night
+
+" Clipboard
+set clipboard=unnamed
 
 " Highlight Whitespaces
 highlight ExtraWhitespace ctermbg=red guibg=red
@@ -28,10 +31,9 @@ set expandtab
 set autoindent
 filetype plugin indent on
 
-" 80 & 90 Column
-:set textwidth=90
-:set textwidth=80
-:set colorcolumn=+1
+" 90 Column
+set textwidth=90
+set colorcolumn=+1
 
 " Persistent Undo = 'undo forever'
 if has('persistent_undo')
@@ -47,7 +49,6 @@ set nu              " Mostra o número de linhas
 set ai              " Faz o auto tab/auto indent
 set cursorline      " Destaca a linha atual
 
-
 " PLUGINS SETUP
 
   " Runs CtrlP Buffer
@@ -56,7 +57,7 @@ set cursorline      " Destaca a linha atual
   " Call Emmet with ctrl+,,
   let g:user_emmet_leader_key=','
 
-  " Nertree shortcuts
+  " Nerdtree shortcuts
   map <Leader>S <ESC>:NERDTreeToggle<CR>
   map <Leader>s <ESC>:NERDTreeFind<CR>
   let NERDTreeShowHidden=1
